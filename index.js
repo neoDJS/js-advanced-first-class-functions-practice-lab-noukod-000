@@ -18,7 +18,7 @@ const driversByName = function(drivers){
 }
 
 const totalRevenue = function(drivers){
-  return drivers.reduce((s, d) => s + d.revenue );
+  return drivers.reduce((s, d) => s.revenue + d );
 }
 
 const averageRevenue =  function (drivers){
